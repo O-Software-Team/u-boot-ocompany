@@ -27,7 +27,6 @@
 #endif
 
 #define BOOT_TARGET_DEVICES(func) \
-       func(MMC, mmc, 0) \
        func(MMC, mmc, 1) \
        func(DHCP, dhcp, na)
 
@@ -42,7 +41,7 @@
 	"console=ttymxc0,115200\0" \
 	"fdt_addr_r=0x43000000\0"			\
 	"boot_fdt=try\0" \
-	"fdtfile=imx8mq-evk.dtb\0" \
+	"fdtfile=imx8mq-oms-lcdif-rm69091.dtb\0" \
 	"initrd_addr=0x43800000\0"		\
 	"bootm_size=0x10000000\0" \
 	"mmcpart=1\0" \
